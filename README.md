@@ -43,3 +43,12 @@ pnpm start
 ```bash
 gcloud auth application-default revoke
 ```
+
+## Resources
+
+- Supported languages: https://cloud.google.com/translate/docs/languages#neural_machine_translation_model
+
+- Tutorial: https://cloud.google.com/vertex-ai/generative-ai/docs/translate/translate-text#tt-api
+
+- Quota and usage: 
+https://cloud.google.com/vertex-ai/generative-ai/docs/translate/translate-text#tt-apihttps://cloud.google.com/vertex-ai/generative-ai/docs/translate/translate-text#tt-api
