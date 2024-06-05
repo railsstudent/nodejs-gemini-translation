@@ -25,7 +25,25 @@ const samples = [
     'How much does 3 apples and 4 oranges cost?'
 ]
 ```
-##
+
+and the results are 
+
+```json
+[
+    {
+        "en": "Good morning",
+        "es": "Buenos Dias"
+    },
+    {
+        "en": "Hello, how are you today?",
+        "es": "Hola, ¿cómo estás hoy?"
+    },
+    {
+        "en": "How much does 3 apples and 4 oranges cost?",
+        "es": "¿Cuánto cuestan tres manzanas, cinco piñas y cuatro naranjas?"
+    }
+]
+```
 
 ## Update target language code
 
@@ -55,4 +73,4 @@ gcloud auth application-default revoke
 - Tutorial: https://cloud.google.com/vertex-ai/generative-ai/docs/translate/translate-text#tt-api
 
 - Quota and usage: 
-https://cloud.google.com/vertex-ai/generative-ai/docs/translate/translate-text#tt-apihttps://cloud.google.com/vertex-ai/generative-ai/docs/translate/translate-text#tt-api
+https://cloud.google.com/vertex-ai/generative-ai/docs/quotas
