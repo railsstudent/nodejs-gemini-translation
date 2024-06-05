@@ -8,6 +8,12 @@ Use Vertex AI to call Gemini 1.5 Pro latest model to perform translation
 gcloud auth application-default login
 ```
 
+## Create environment file
+-  Copy .env.example to .env
+-  Update GOOGLE_PROJECT_ID to Google Cloud Project
+-  Update GOOGLE_LOCATION to Google Cloud Project
+-  Update GOOGLE_MODEL to a model found in Vertex AI Model Garden
+
 ## Add sample strings to perform translation
 
 Add texts to sample array
@@ -23,15 +29,13 @@ const samples = [
 
 ## Update target language code
 
-Change the language code in the target property of language
+Change the TARGET environment variable in the "start script" of package.json
 
-```typescript
-    const language = {
-        source: 'en',
-        target: 'zh-Hant',
+```bash
+    "scripts": {
+        "start": "TARGET=<target language code> node -r ts-node/register --env-file=.env index.ts"
     }
 ```
-##
 
 ## Run the application
 ```bash
