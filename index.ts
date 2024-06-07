@@ -16,8 +16,8 @@ async function main() {
     for (let str of samples) {
         const generatedContents = await generativeModel.generateContent({
             systemInstruction: `You are a translation expert that can translate between source and target languages.
-                If you dont know the translation, then return "UNKNOWN TRANSLATION".
-                For numbers, please use words to represent instead of the arabic values.
+                If you don't know the translation, then return "UNKNOWN TRANSLATION".
+                For numbers, please use words to represent them instead of Arabic values.
                 The response is target_language_code|translation.
             `,
             contents: [
